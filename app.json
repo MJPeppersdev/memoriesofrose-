@@ -1,0 +1,36 @@
+{
+  "name": "memoriesofrose-",
+  "scripts": {
+  },
+  "env": {
+    "ACTION_CONTROLLER.PERFORM_CACHING": {
+      "required": true
+    },
+    "DATABASE_ADAPTER": {
+      "required": true
+    },
+    "DATABASE_PASSWORD": {
+      "required": true
+    },
+    "DATABASE_USERNAME": {
+      "required": true
+    },
+    "PUBLIC_FILE_SERVER.ENABLED": {
+      "required": true
+    },
+    "SECRET_KEY_BASE": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "heroku-postgresql"
+  ],
+  "stack": "heroku-18",
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
